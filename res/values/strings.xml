@@ -2,6 +2,7 @@
 <resources>
 
     <string name="hello">Hello World, HoughyActivity!</string>
+    <string name="viewCaptureLabel">Please see below for your image.</string>
     <string name="app_name">Houghy</string>
 
 </resources>
