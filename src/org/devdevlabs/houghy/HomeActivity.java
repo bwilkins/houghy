@@ -1,6 +1,7 @@
 package org.devdevlabs.houghy;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -26,7 +27,8 @@ public class HomeActivity extends Activity {
     private OnClickListener mCorkyListener = new OnClickListener() {
         public void onClick(View v) {
           // do something when the button is clicked
-        	setContentView(R.layout.viewcapture);
+            Intent myIntent = new Intent(v.getContext(), ViewCaptureActivity.class);
+            startActivityForResult(myIntent, 0);
         }
     };
 
